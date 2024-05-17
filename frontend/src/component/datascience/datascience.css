@@ -739,6 +739,14 @@ top: 10px;
     
     
   }
+
+  
+    .book{
+      height: 200px;
+      width: 190%;
+      margin-top: 10px;
+     }
+  
   
  
 }
@@ -964,4 +972,30 @@ top: 10px;
   .flex-item {
     margin-bottom: 20px;
   }
+}
+
+
+@media (max-width: 768px) {
+  
+    .book{
+      height: 170px;
+      width: 90%;
+      margin-top: 10px;
+     }
+
+     .book img{
+
+     height: 30px;
+     width: 30px;
+     margin-left: -30px;
+
+     }
+
+     .book .book1 h3{
+      font-size: 25px;
+      margin-left: 10px;
+     }
+  
+  
+ 
 }

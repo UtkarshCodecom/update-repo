@@ -36,13 +36,20 @@ import oc from "../../images/os.png";
 import course from "../../images/course.png";
 import vapt from "../../images/vapt1.png";
 import { Link } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 const Home = ({ history }) => {
+  
 
+  const navigate = useNavigate()
 
 
 
   const isimge = window.innerWidth >= 784
+
+  const book = ()=>{
+   navigate('/book')
+  }
 
 
 
@@ -313,7 +320,7 @@ const Home = ({ history }) => {
                   <p style={{ marginTop: "10px" }}>Lets Collaborate and discuss about your business goals.
                   </p>
                 </div>
-                <Button variant="contained">Book a meeting</Button>
+                <Button variant="contained" onClick={book}>Book a meeting</Button>
               </div>
             </ScrollAnimation>
             <ScrollAnimation animateIn="fadeIn">

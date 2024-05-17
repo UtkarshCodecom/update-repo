@@ -77,7 +77,7 @@ body {
 }
 
 .vap .card .card-data p{
-  font-size: 15px;
+  font-size: 11px;
   font-weight: 300;
   font-family: "Inter", sans-serif;
   line-height: 1.75;
@@ -230,7 +230,10 @@ body {
   display: grid;
   gap: 0vh 12vh;
   padding: 2vh 12vh;
+
+  
   grid-template-columns: repeat(3, 1fr);
+  
 }
 
 .ddcards{
@@ -617,7 +620,7 @@ background: linear-gradient(180deg, rgba(40,1,57,1) 0%, rgba(0,0,0,1) 100%);
   padding: 30px 40px;
   border-radius: 20px;
   margin: 5% 5%;
-  margin-top: -20px;
+  margin-top: 60px;
 }
 
 
@@ -639,6 +642,7 @@ background: linear-gradient(180deg, rgba(40,1,57,1) 0%, rgba(0,0,0,1) 100%);
 
 .book div{
   width: 75%;
+ 
 }
 
 .card-img{
@@ -648,6 +652,7 @@ background: linear-gradient(180deg, rgba(40,1,57,1) 0%, rgba(0,0,0,1) 100%);
 .book img{
   width: 100px;
   height: 100px;
+
 }
 
 .book Button{
@@ -786,7 +791,7 @@ option{
 @media (max-width: 768px) {
 
   .providing-high{
-    font-size: 45px;
+    font-size: 41px;
   }
  .card{
   margin-right: -100px;
@@ -817,6 +822,53 @@ option{
       
 }
 
+.img1 img{
+  width: 100%;
+  width: 100%;
+margin-bottom: 100px;
+  position: absolute
+
+}
+
+.mobilecard{
+  width: 300px;
+  border-radius: 20px;
+  height: 65vh;
+  background-color: #7a7dff6f;
+    margin-bottom: 5vh;
+  margin-top: 30px;
+
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 150%;
+}
+.mobil-card-data{
+  text-align: center;
+  height: 100%;
+
+}
+.mobil-card-data h2{
+  color: aliceblue;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: "Ramabhadra", sans-serif;
+
+}
+
+
+.mobil-card-data p{
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  color: aliceblue;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+
+
 }
 
 
@@ -824,3 +876,4 @@ option{
     justify-content: center;
     margin-left: 100px;
 }
+
