@@ -1,0 +1,76 @@
+/* Base styles for dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #333;
+    color: #b0b0b0;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    /* Add transitions for smooth animations */
+    transition: all 0.2s ease;
+}
+
+/* Dropdown content styles */
+.dropdown-content {
+    display: none; /* Initially hidden */
+    position: absolute;
+    background-color: black;
+    min-width: 700px;
+    min-height: 800px;
+    margin-top: 50px;
+
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    /* Centering the dropdown */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    transition: all 0.3s ease; /* Smooth transitions */
+    opacity: 0; /* Start invisible */
+    /* You could use a slight offset to give a smooth effect when opening */
+    transform-origin: top center;
+}
+
+/* Hover state to show the dropdown */
+.dropdown:hover .dropdown-content {
+    display: block; /* Display dropdown when hover */
+    opacity: 10; /* Make it visible */
+}
+
+/* Dropdown content link styles */
+/* Dropdown content link styles */
+.dropdown-content a {
+    color: #b0b0b0;
+    padding: 12px 16px;
+    text-decoration: none; /* No default underline */
+    display: block;
+    margin-left: 1px;
+    font-size: 18px;
+    position: relative; /* Allows positioning of pseudo-elements */
+    transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+/* Hover effect with an animated underline using ::after */
+.dropdown-content a:hover {
+    color: #208cff; /* Change text color to blue on hover */
+}
+
+.dropdown-content a::after {
+    content: ""; /* Empty content to create a visual element */
+    position: absolute;
+    bottom: 0; /* Position at the bottom to create underline effect */
+    left: 0; /* Start from the left edge */
+    height: 2px; /* Thickness of the underline */
+    width: 0; /* Start with no width (invisible) */
+    background-color: #007BFF; /* Blue underline */
+    transition: width 0.3s ease; /* Smooth transition for the underline */
+}
+
+/* On hover, increase the width to create an underline effect */
+.dropdown-content a:hover::after {
+    width: 100%; /* Full width underline on hover */
+}

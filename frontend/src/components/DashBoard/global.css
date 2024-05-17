@@ -1,0 +1,6 @@
+.dark-theme {
+    background-color: black;
+    color: white; /* Change text color to make it visible on the dark background */
+    /* Add any other global dark theme styles here */
+  }
+  

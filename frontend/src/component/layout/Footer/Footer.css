@@ -1,0 +1,36 @@
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.footer-section {
+  background: black;
+  position: relative;
+}
+
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+
+.single-cta i {
+  color: #1495ff;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.rightFooter > a:hover {
+  color: #eb4034;
+}
