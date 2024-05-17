@@ -4,6 +4,8 @@ const sendToken = require("../utils/jwttoken")
 const User = require('../models/userModel'); 
 const catchAsyncErrors = require("../Middleware/catchasyncerr")
 const Task = require('../models/taskModel')
+const Book = require('../models/bookmodel')
+
 
 
 
@@ -179,6 +181,33 @@ router.get('/tasks/:userId', async (req, res) => {
         res.status(500).json({ success: false, message: 'Internal server error' });
     }
 });
+
+router.post('/book', async (req, res) => {
+  // Destructure the fields from the request body
+  const { name, email, phone, service, reason } = req.body;
+
+  // Create a new instance of the Book model
+  const newUser = new Book({
+    name,
+    email,
+    phone,
+    service,
+    reason
+  });
+
+  try {
+    // Save the new user to the database
+    await newUser.save();
+
+    // Send a success response
+    res.status(201).json({ message: 'Booking successful', user: newUser });
+  } catch (error) {
+    // Handle any errors that occur during save
+    console.error(error);
+    res.status(500).json({ message: 'Server error, please try again later' });
+  }
+});
+
 
 module.exports = router;
 

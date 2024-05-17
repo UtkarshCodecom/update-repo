@@ -328,11 +328,11 @@ const Datascience = ({ history }) => {
       </ScrollAnimation>
       <ScrollAnimation animateIn="fadeIn" animateOnce="true">
                             <div className="book ">
-                                <img src={mt} />
-                                <div>
-                                    <h3>Book a meeting with us</h3>
-                                    <p>Lets Collaborate and discuss about your business goals.
-                                    </p>
+                               {isimge ? <img src={mt} /> : null}
+                                <div className="book1">
+                                  <h3>Book a meeting with us</h3> 
+                                    {isimge ? <p>Lets Collaborate and discuss about your business goals.
+                                    </p> : null}
                                 </div>
                                 <Button variant="contained">Book a meeting</Button>
                             </div>

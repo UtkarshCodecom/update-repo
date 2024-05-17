@@ -19,7 +19,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.compat.css";
-
+import {useNavigate }from 'react-router-dom'
 import mt from "../../images/meet.png";
 import web from "../../images/web.png";
 import api from "../../images/api.png";
@@ -27,11 +27,16 @@ import service from "../../images/network.png";
 
 
 const Vapt = () => {
-   
-
+    const navigate= useNavigate()
+      
+    const isimg = window.innerWidth >=784
+   const book = ()=>{
+    navigate("/book")
+   }
+ 
     return (
         <Fragment>
-           \
+           
                 <Fragment>
                     <MetaData title="vapt" />
 
@@ -40,8 +45,10 @@ const Vapt = () => {
                         <ScrollAnimation animateIn="fadeInLeft" animateOnce="true">
                             <div className="box">
                                 <div className="group">
+                                { !isimg ?<img src={ im1}  style={{marginLeft:'220px', position:"absolute"}} className="mobileimg"/> : null}
 
                                     <p className="providing-high">
+
                                         VAPT
                                     </p>
 
@@ -54,16 +61,16 @@ const Vapt = () => {
                                     </div>
 
                                 </div>
-                                <div className="img1"  style={{marginLeft:'0'}}>
-                                    <img src={im1}  style={{marginLeft:'0'}} />
-                                </div>
+                                { isimg ?<div className="img1" style={{marginLeft:'0'}}>
+                                    <img src={ im1}  style={{marginLeft:'0'}}/>
+                                </div> : null}
                             </div>
                         </ScrollAnimation>
                         <ScrollAnimation animateIn="fadeIn" animateOnce="true">
                             <div className="why">
 
                                 <div className="cen">
-                                    <h2 className="white-cen"> Sub Categories</h2>
+                                <h2 className={isimg ? "white-cen" : 'white-cen mt-14'}> Sub Categories</h2>
                                 </div>
 
                                 <div className="cards vap">
@@ -104,7 +111,7 @@ const Vapt = () => {
                                     <p>Lets Collaborate and discuss about your business goals.
                                     </p>
                                 </div>
-                                <Button variant="contained">Book a meeting</Button>
+                                <Button variant="contained" onClick={book}>Book a meeting</Button>
                             </div>
                         </ScrollAnimation>
                     </div>

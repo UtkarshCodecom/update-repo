@@ -1,85 +1,16 @@
 import React, { Fragment, useEffect, useState, useRef } from "react";
-import { CgMouse } from "react-icons/cg";
-import { DiCelluloid } from "react-icons/di";
-
 import "../Home/Home.css";
 import MetaData from "../layout/MetaData";
-import { clearErrors, getProduct } from "../../actions/productAction";
-import { useSelector, useDispatch } from "react-redux";
-import Loader from "../layout/Loader/Loader";
-import { useAlert } from "react-alert";
-import im1 from "../../images/vapt.png";
-import line1 from "../../images/line1.png";
-import line2 from "../../images/line2.png";
-import { getAllText } from "../../actions/homeAction.js";
-import Box from '@mui/material/Box';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import temp from "../../images/Frame.svg";
-import founder from "../../images/6.png"
-import im20 from "../../images/20.png";
-import temp1 from "../../images/playstore.png";
-import tetmo from "../../images/tetmo.png";
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.compat.css";
 
-import mt from "../../images/meet.png";
-import web from "../../images/web.png";
-import api from "../../images/api.png";
-import service from "../../images/network.png";
-import ReCAPTCHA from "react-google-recaptcha";
-import { Alert } from "@mui/material";
 
 const TC = () => {
-    const alert = useAlert();
-    const dispatch = useDispatch();
-    //const { loading, error, products } = useSelector((state) => state.products);
-    const { loading, error, texts } = useSelector((state) => state.texts);
-    const [rec, setRec] = useState(false);
-    const recaptchaRef = React.createRef();
-    const bull = (
-        <Box
-            component="span"
-            sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
-        >
-            •
-        </Box>
-    );
 
-    async function submitForm(event) {
-        event.preventDefault()
-        const captchaValue = recaptchaRef.current.getValue()
-        if (!captchaValue) {
-            alert.error('Please verify the reCAPTCHA!')
-        } else {
-            // make form submission
-            alert.success('Form submission successful!')
-        }
-    }
-
-    function onChange(value) {
-        setRec(value);
-        console.log(recaptchaRef.current.getValue());
-
-    }
-    useEffect(() => {
-        if (error) {
-            alert.error(error);
-            dispatch(clearErrors());
-        }
-        dispatch(getAllText());
-    }, [dispatch, error, alert]);
-
-    console.log(texts);
 
     return (
         <Fragment>
-            {loading ? (
-                <Loader />
-            ) : (
+          (
                 <Fragment>
                     <MetaData title="Home" />
 
@@ -140,7 +71,7 @@ B. No Joint Venture, No Derogation of Rights. You agree that no joint venture, p
 
                 </Fragment>
             )
-            }
+            
         </Fragment >
     );
 };

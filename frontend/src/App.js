@@ -15,6 +15,11 @@ import Other from './component/Other/Other';
 import Fullstack from './component/fullstack/Fullstack';
 import Datascience from './component/datascience/Datascience';
 import Humanresource from './component/Human resourcs/Humanresource';
+import Udemy from './component/Udemy/Udemy';
+import Footer from './component/layout/Footer/Footer'
+import TC from './component/Other/TC'
+import Book from './component/layout/bookmeeting';
+
 
 
 function App() {
@@ -31,7 +36,8 @@ function App() {
             <Route path="/login" element={<SignUp />} />
             <Route path="/vapt" element={<Vapt />} />
             <Route path="/In-house" element={<Inhouse />} />
-        < Route path="/dashboard/admin" element={<Admindashboard />} />
+            < Route path="/udemy" element={<Udemy />} />
+            < Route path="/dashboard/admin" element={<Admindashboard />} />
             <Route path="/dashboard/user" element={<Empdashboard />} />
             <Route path="*" element={<Notfound />} />
             <Route path="/other" element={<Other />} />
@@ -39,8 +45,11 @@ function App() {
             <Route path="/course/fullstack" element={<Fullstack />} />
             <Route path="/course/datascience" element={<Datascience />} />
             <Route path="/course/humanresource" element={<Humanresource />} />
+            <Route path='/tc' element={<TC />} />
+            <Route path='/book' element={<Book />} />
           </Routes>
         </div>
+        <Footer />
       </Router>
     </Provider>
   );
