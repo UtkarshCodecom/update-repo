@@ -4,8 +4,11 @@ const sendToken = require("../utils/jwttoken")
 const User = require('../models/userModel'); 
 const catchAsyncErrors = require("../Middleware/catchasyncerr")
 const Task = require('../models/taskModel')
+<<<<<<< HEAD
 const Book = require('../models/bookmodel')
 
+=======
+>>>>>>> d8da131a4f02e1d2712ecb387a22d16de5d4e8cf
 
 
 
@@ -182,6 +185,7 @@ router.get('/tasks/:userId', async (req, res) => {
     }
 });
 
+<<<<<<< HEAD
 router.post('/book', async (req, res) => {
   // Destructure the fields from the request body
   const { name, email, phone, service, reason } = req.body;
@@ -209,6 +213,8 @@ router.post('/book', async (req, res) => {
 });
 
 
+=======
+>>>>>>> d8da131a4f02e1d2712ecb387a22d16de5d4e8cf
 module.exports = router;
 
 

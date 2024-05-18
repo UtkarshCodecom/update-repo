@@ -739,6 +739,7 @@ top: 10px;
     
     
   }
+<<<<<<< HEAD
 
   
     .book{
@@ -747,6 +748,8 @@ top: 10px;
       margin-top: 10px;
      }
   
+=======
+>>>>>>> d8da131a4f02e1d2712ecb387a22d16de5d4e8cf
   
  
 }
@@ -973,6 +976,7 @@ top: 10px;
     margin-bottom: 20px;
   }
 }
+<<<<<<< HEAD
 
 
 @media (max-width: 768px) {
@@ -999,3 +1003,5 @@ top: 10px;
   
  
 }
+=======
+>>>>>>> d8da131a4f02e1d2712ecb387a22d16de5d4e8cf

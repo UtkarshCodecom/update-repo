@@ -36,21 +36,30 @@ import oc from "../../images/os.png";
 import course from "../../images/course.png";
 import vapt from "../../images/vapt1.png";
 import { Link } from "@mui/material";
+<<<<<<< HEAD
 import { useNavigate } from "react-router-dom";
 
 const Home = ({ history }) => {
   
 
   const navigate = useNavigate()
+=======
+
+const Home = ({ history }) => {
+
+>>>>>>> d8da131a4f02e1d2712ecb387a22d16de5d4e8cf
 
 
 
   const isimge = window.innerWidth >= 784
 
+<<<<<<< HEAD
   const book = ()=>{
    navigate('/book')
   }
 
+=======
+>>>>>>> d8da131a4f02e1d2712ecb387a22d16de5d4e8cf
 
 
   return (
@@ -320,7 +329,11 @@ const Home = ({ history }) => {
                   <p style={{ marginTop: "10px" }}>Lets Collaborate and discuss about your business goals.
                   </p>
                 </div>
+<<<<<<< HEAD
                 <Button variant="contained" onClick={book}>Book a meeting</Button>
+=======
+                <Button variant="contained">Book a meeting</Button>
+>>>>>>> d8da131a4f02e1d2712ecb387a22d16de5d4e8cf
               </div>
             </ScrollAnimation>
             <ScrollAnimation animateIn="fadeIn">

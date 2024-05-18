@@ -151,15 +151,24 @@ const Signup = () => {
     const isimg = window.innerWidth >= 786
 
     return (
+<<<<<<< HEAD
         <div  className={ isimg ? `flex justify-center items-center h-screen   bg-center bg-cover  bg-black ` :  `flex justify-center items-center h-screen  ml-10 bg-center bg-cover  bg-black  ` } >
            
+=======
+        <div className={ isimg ? `flex justify-center items-center h-screen   bg-center bg-cover  bg-black ` :  `flex justify-center items-center h-screen  ml-10 bg-center bg-cover  bg-black  ` } >
+            <img src={bg_icon } className=' absolute  h-full w-full mr-48  opacity-25 inset-0 object-cover'></img>
+>>>>>>> d8da131a4f02e1d2712ecb387a22d16de5d4e8cf
             <ToastContainer />
             
             <p className='absolute mb-[390px] text-white font-bold  text-2xl mr-6'>{isLogin ? "Log in" : "Register"}</p>
             <div className="p-8 rounded-md shadow-md  ">
                 {!isLogin && (
                     <>
+<<<<<<< HEAD
                         <div className="mb-4 ">
+=======
+                        <div className="mb-4 mt-10 absolute">
+>>>>>>> d8da131a4f02e1d2712ecb387a22d16de5d4e8cf
                             <TextField id="outlined-required"     label="name"  variant="outlined" fullWidth onChange={(e) => setname(e.target.value)}  className='bg-white text-gray-500 rounded-md'/>
                         </div>
                         <div className="mb-4">

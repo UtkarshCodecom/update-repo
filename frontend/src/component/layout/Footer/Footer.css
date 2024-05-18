@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 footer {
   padding: 2vmax;
   background-color: rgb(0, 0, 0);
@@ -58,8 +59,45 @@ footer {
   color: white;
   transition: all 0.5s;
   margin: 0.5vmax;
+=======
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.footer-section {
+  background: black;
+  position: relative;
+}
+
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+
+.single-cta i {
+  color: #1495ff;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+>>>>>>> d8da131a4f02e1d2712ecb387a22d16de5d4e8cf
 }
 
 .rightFooter > a:hover {
   color: #eb4034;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> d8da131a4f02e1d2712ecb387a22d16de5d4e8cf

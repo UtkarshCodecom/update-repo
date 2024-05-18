@@ -77,7 +77,11 @@ body {
 }
 
 .vap .card .card-data p{
+<<<<<<< HEAD
   font-size: 11px;
+=======
+  font-size: 15px;
+>>>>>>> d8da131a4f02e1d2712ecb387a22d16de5d4e8cf
   font-weight: 300;
   font-family: "Inter", sans-serif;
   line-height: 1.75;
@@ -230,10 +234,14 @@ body {
   display: grid;
   gap: 0vh 12vh;
   padding: 2vh 12vh;
+<<<<<<< HEAD
 
   
   grid-template-columns: repeat(3, 1fr);
   
+=======
+  grid-template-columns: repeat(3, 1fr);
+>>>>>>> d8da131a4f02e1d2712ecb387a22d16de5d4e8cf
 }
 
 .ddcards{
@@ -620,7 +628,11 @@ background: linear-gradient(180deg, rgba(40,1,57,1) 0%, rgba(0,0,0,1) 100%);
   padding: 30px 40px;
   border-radius: 20px;
   margin: 5% 5%;
+<<<<<<< HEAD
   margin-top: 60px;
+=======
+  margin-top: -20px;
+>>>>>>> d8da131a4f02e1d2712ecb387a22d16de5d4e8cf
 }
 
 
@@ -642,7 +654,10 @@ background: linear-gradient(180deg, rgba(40,1,57,1) 0%, rgba(0,0,0,1) 100%);
 
 .book div{
   width: 75%;
+<<<<<<< HEAD
  
+=======
+>>>>>>> d8da131a4f02e1d2712ecb387a22d16de5d4e8cf
 }
 
 .card-img{
@@ -652,7 +667,10 @@ background: linear-gradient(180deg, rgba(40,1,57,1) 0%, rgba(0,0,0,1) 100%);
 .book img{
   width: 100px;
   height: 100px;
+<<<<<<< HEAD
 
+=======
+>>>>>>> d8da131a4f02e1d2712ecb387a22d16de5d4e8cf
 }
 
 .book Button{
@@ -791,7 +809,11 @@ option{
 @media (max-width: 768px) {
 
   .providing-high{
+<<<<<<< HEAD
     font-size: 41px;
+=======
+    font-size: 45px;
+>>>>>>> d8da131a4f02e1d2712ecb387a22d16de5d4e8cf
   }
  .card{
   margin-right: -100px;
@@ -822,6 +844,7 @@ option{
       
 }
 
+<<<<<<< HEAD
 .img1 img{
   width: 100%;
   width: 100%;
@@ -869,11 +892,17 @@ margin-bottom: 100px;
 
 
 
+=======
+>>>>>>> d8da131a4f02e1d2712ecb387a22d16de5d4e8cf
 }
 
 
 .tott{
     justify-content: center;
     margin-left: 100px;
+<<<<<<< HEAD
 }
 
+=======
+}
+>>>>>>> d8da131a4f02e1d2712ecb387a22d16de5d4e8cf

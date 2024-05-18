@@ -19,7 +19,11 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.compat.css";
+<<<<<<< HEAD
 import {useNavigate }from 'react-router-dom'
+=======
+
+>>>>>>> d8da131a4f02e1d2712ecb387a22d16de5d4e8cf
 import mt from "../../images/meet.png";
 import web from "../../images/web.png";
 import api from "../../images/api.png";
@@ -27,6 +31,7 @@ import service from "../../images/network.png";
 
 
 const Vapt = () => {
+<<<<<<< HEAD
     const navigate= useNavigate()
       
     const isimg = window.innerWidth >=784
@@ -37,6 +42,13 @@ const Vapt = () => {
     return (
         <Fragment>
            
+=======
+   
+
+    return (
+        <Fragment>
+           \
+>>>>>>> d8da131a4f02e1d2712ecb387a22d16de5d4e8cf
                 <Fragment>
                     <MetaData title="vapt" />
 
@@ -45,10 +57,15 @@ const Vapt = () => {
                         <ScrollAnimation animateIn="fadeInLeft" animateOnce="true">
                             <div className="box">
                                 <div className="group">
+<<<<<<< HEAD
                                 { !isimg ?<img src={ im1}  style={{marginLeft:'220px', position:"absolute"}} className="mobileimg"/> : null}
 
                                     <p className="providing-high">
 
+=======
+
+                                    <p className="providing-high">
+>>>>>>> d8da131a4f02e1d2712ecb387a22d16de5d4e8cf
                                         VAPT
                                     </p>
 
@@ -61,16 +78,26 @@ const Vapt = () => {
                                     </div>
 
                                 </div>
+<<<<<<< HEAD
                                 { isimg ?<div className="img1" style={{marginLeft:'0'}}>
                                     <img src={ im1}  style={{marginLeft:'0'}}/>
                                 </div> : null}
+=======
+                                <div className="img1"  style={{marginLeft:'0'}}>
+                                    <img src={im1}  style={{marginLeft:'0'}} />
+                                </div>
+>>>>>>> d8da131a4f02e1d2712ecb387a22d16de5d4e8cf
                             </div>
                         </ScrollAnimation>
                         <ScrollAnimation animateIn="fadeIn" animateOnce="true">
                             <div className="why">
 
                                 <div className="cen">
+<<<<<<< HEAD
                                 <h2 className={isimg ? "white-cen" : 'white-cen mt-14'}> Sub Categories</h2>
+=======
+                                    <h2 className="white-cen"> Sub Categories</h2>
+>>>>>>> d8da131a4f02e1d2712ecb387a22d16de5d4e8cf
                                 </div>
 
                                 <div className="cards vap">
@@ -111,7 +138,11 @@ const Vapt = () => {
                                     <p>Lets Collaborate and discuss about your business goals.
                                     </p>
                                 </div>
+<<<<<<< HEAD
                                 <Button variant="contained" onClick={book}>Book a meeting</Button>
+=======
+                                <Button variant="contained">Book a meeting</Button>
+>>>>>>> d8da131a4f02e1d2712ecb387a22d16de5d4e8cf
                             </div>
                         </ScrollAnimation>
                     </div>
