@@ -1,0 +1,42 @@
+.sidebar {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  padding: 4rem 0;
+}
+
+.sidebar > a > img {
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.sidebar > a > img:hover {
+  filter: drop-shadow(0 0 10px tomato);
+}
+.sidebar a {
+  text-decoration: none;
+  color: aliceblue;
+  background-color: rgba(105, 185, 255, 0.337);
+  margin: 10px 20px;
+  border-radius: 20px;
+  font: 200 1rem "Roboto";
+  padding: 1.5rem;
+  transition: all 0.5s;
+  border-radius: 20px;
+  background: #ffffff30;
+  box-shadow:  5px 5px 10px #0f0f0f,
+               -5px -5px 10px #2f2d2d;
+}
+
+.sidebar a > P {
+  display: flex;
+  align-items: center;
+}
+.sidebar a > p > svg {
+  margin-right: 0.5rem;
+}
+
+.MuiTypography-root {
+  background-color: #fff !important;
+}
